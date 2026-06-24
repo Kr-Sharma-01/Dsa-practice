@@ -27,6 +27,7 @@ int s_largest (vector<int> & arr){
 
 // Optimal soln:
 
+/*
 int second_largest (vector<int> & arr){
     int largest = 0;
     int s_largest = INT_MIN;
@@ -47,5 +48,23 @@ int second_largest (vector<int> & arr){
 int main (){
     vector<int> arr = {11,4,5,1,8};
     cout << "Second largest number is : " << second_largest(arr);
+    return 0;
+}
+*/
+
+// Check if array is sorted 
+
+bool sorted (vector<int> & arr){
+    for(int i = 1; i <n ; i++){
+        if(arr[i] < arr[i-1]){
+            return false;
+        }      
+    }
+    return true;
+}
+
+int main (){
+    vector<int> arr = {11,4,5,1,8};
+    cout << "Array is sorted = " << boolalpha << sorted(arr);
     return 0;
 }
