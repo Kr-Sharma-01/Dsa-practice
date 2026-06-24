@@ -8,6 +8,7 @@ using namespace std;
 
 // Brute force soln: 
 
+/*
 int duplicates(vector<int> & arr){
     set<int> st;
     int n = arr.size();
@@ -22,6 +23,18 @@ int duplicates(vector<int> & arr){
         index++;
     }
     return index;
+}
+*/
+int duplicates (vector<int> & arr){
+
+    int i = 0;
+    for (int j = 1 ; j<arr.size() ; j++){
+        if (arr[j] != arr[i]){
+            i++;
+            arr[i] = arr[j];
+        }
+    }
+    return i+1;
 }
 
 int main(){
