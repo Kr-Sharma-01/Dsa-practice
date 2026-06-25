@@ -17,8 +17,8 @@ int rotate (vector<int> & arr){
 }    
 */
 
-// Rotating array k times left 
-
+// Rotating array LEFT k times 
+/*
 void rotate(vector<int> & arr , int k){
     int n = arr.size();
     k = k%n;
@@ -26,7 +26,16 @@ void rotate(vector<int> & arr , int k){
     reverse(arr.begin()+k , arr.end());
     reverse(arr.begin() , arr.end());
 }
+*/
 
+// Rotating array RIGHT k times (Leetcode)
+
+void rotate (vector<int> & arr ,int k){
+    int n = arr.size();
+    reverse(arr.begin() , arr.end());
+    reverse(arr.begin() , arr.begin()+k);
+    reverse(arr.begin()+k , arr.end());
+}
 
 int main (){
     vector<int> arr = {1,2,3,4,5,6};
