@@ -1,4 +1,4 @@
-// Removing duplicates from sorted array 
+// Removing duplicates from sorted array (Leetcode)
 
 #include<iostream>
 #include<vector>
@@ -24,6 +24,9 @@ int duplicates(vector<int> & arr){
     }
     return index;
 }
+
+// Optimal Soln:
+
 */
 int duplicates (vector<int> & arr){
 
