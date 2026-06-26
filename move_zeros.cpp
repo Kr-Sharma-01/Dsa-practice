@@ -1,8 +1,14 @@
+
+// Moving zeros to end of an array (Leetcode)
+
 #include<iostream>
 #include<vector>
 
 using namespace std;
 
+// Brute soln : 
+
+/*
 int move(vector<int> & arr){
     vector<int> temp ;
     for (int i =0 ; i<arr.size() ; i++){
@@ -20,6 +26,28 @@ int move(vector<int> & arr){
     
     return 0;   
 }
+*/
+
+// Optimal soln : 
+
+int move (vector<int> & arr){
+    int j = -1;
+    for (int i = 0 ; i < arr.size() ; i++ ){
+        if (arr[i] == 0){
+            j = i;
+            break;
+        }
+    }
+
+    for (int i = j+1 ; i<arr.size() ; i++){
+        if (arr[i] != 0){
+            swap(arr[i] , arr[j]);
+            j++;
+        }
+    }
+    return 0;
+}
+
 
 int main(){
     vector<int> arr = {1,2,0,0,5,0,2,3};
@@ -31,4 +59,5 @@ int main(){
     }
     return 0;
 }
+
 
