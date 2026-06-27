@@ -63,8 +63,8 @@ vector<int> findUnion(vector<int> &arr1, vector<int> &arr2)
 
 
 int main(){
-    vector<int> arr1 = {1,2,3,4};
-    vector<int> arr2 = {3,4,5,6};
+    vector<int> arr1 = {1,2,3,7,9};
+    vector<int> arr2 = {3,4,5,7,6,10};
 
     vector<int> ans = findUnion(arr1 , arr2);
 

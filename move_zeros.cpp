@@ -50,7 +50,7 @@ int move (vector<int> & arr){
 
 
 int main(){
-    vector<int> arr = {1,2,0,0,5,0,2,3};
+    vector<int> arr = {1,2,0,0,5,0,2,0,5,0,0,0,5,3,3};
     move(arr);
 
     cout << "The new array is : ";
