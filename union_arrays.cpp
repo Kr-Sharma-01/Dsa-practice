@@ -1,3 +1,6 @@
+// Union of two arrays 
+// Brute soln : 
+
 #include<iostream>
 #include<vector>
 
