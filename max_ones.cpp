@@ -1,7 +1,11 @@
+// Maximum consecutive ones in an array (Leetcode)
+
 #include<iostream>
 #include<vector>
 
 using namespace std;
+
+//Optimal soln:
 
 int ones (vector<int> & arr){
      int count = 0;
@@ -23,7 +27,7 @@ return maxCount;
 int main (){
     vector<int> arr = {1,1,1,0,1,1};
     int ans = ones(arr);
-    cout << "cosecutive ones are : " << ans ;
+    cout << "Maximum consecutive ones are : " << ans ;
     return 0;
         
 }
