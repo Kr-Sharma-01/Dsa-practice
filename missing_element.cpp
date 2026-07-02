@@ -31,10 +31,10 @@ int missing (vector<int> & arr , int N){
     int xor2 = 0; 
     int n = N-1;
     for(int i = 0 ; i < arr.size() ; i++){
-        xor2  ^=  arr[i];
-        xor1  ^= (i+1);
+        xor2 = xor2 ^ arr[i];
+        xor1 = xor1 ^(i+1);
     }
-    xor1 ^= N;
+    xor1 = xor1 ^ N;
     return xor1 ^ xor2;
 }
 
