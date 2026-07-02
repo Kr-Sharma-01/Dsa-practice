@@ -1,3 +1,5 @@
+// Only one appearance of an element when other appears twice (Leetcode)  
+
 #include<iostream>
 #include<vector>
 
