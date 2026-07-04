@@ -1,7 +1,11 @@
+// Remove element (Leetcode)
+
 #include<iostream>
 #include<vector>
 
 using namespace std;
+
+// Optimal soln :
 
 int removeElement(vector<int>& nums, int val) {
         int k = 0;
