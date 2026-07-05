@@ -1,7 +1,13 @@
+// Sort an array with 0s , 1s and 2s (Leetcode)
+
 #include <iostream>
 #include <vector>
 
 using namespace std;
+
+// Brute soln : Sorting
+
+// Optimal soln :
 
 vector<int> sorting (vector<int> & arr){
     int low = 0 , mid = 0 , high = arr.size()-1 ;
