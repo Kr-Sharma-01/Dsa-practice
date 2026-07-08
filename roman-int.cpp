@@ -22,7 +22,7 @@ int RomanToInt (string s){
     int ans = 0;
      
     for(int i = 0 ; i < s.length() ; i++){
-        if ( i < s.length()-1 && value[s[i]]<value[s[i]+1]){
+        if ( i < s.length()-1 && value[s[i]]<value[s[i+1]]){
             ans -= value[s[i]];
         }
         else{
