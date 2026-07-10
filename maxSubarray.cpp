@@ -1,7 +1,11 @@
+// Maximum subaaray (Leetcode)
+
 #include<iostream>
 #include<vector>
 
 using namespace std;
+
+// Optimal soln :
 
 int maxSubArray(vector<int>& nums) {
 
