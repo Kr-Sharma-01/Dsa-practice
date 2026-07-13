@@ -7,7 +7,6 @@
 using namespace std;
 
 // Brute force soln: 
-
 /*
 int duplicates(vector<int> & arr){
     set<int> st;
@@ -24,7 +23,6 @@ int duplicates(vector<int> & arr){
     }
     return index;
 }
-
 // Optimal Soln:
 
 */
