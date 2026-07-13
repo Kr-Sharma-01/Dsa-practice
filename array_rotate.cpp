@@ -1,4 +1,4 @@
-// Rotate an array by one place left
+// Rotate an array by one place left (Leetcode)
 // Optimal soln:
 
 #include<iostream>
