@@ -26,7 +26,6 @@ int s_largest (vector<int> & arr){
     */
 
 // Optimal soln:
-
 /*
 int second_largest (vector<int> & arr){
     int largest = 0;
@@ -42,7 +41,6 @@ int second_largest (vector<int> & arr){
         }   
     }  
     return s_largest ; 
-
 }
 
 int main (){
@@ -51,7 +49,6 @@ int main (){
     return 0;
 }
 */
-
 // Check if array is sorted 
 
 bool sorted (vector<int> & arr){
