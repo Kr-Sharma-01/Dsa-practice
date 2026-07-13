@@ -22,7 +22,6 @@ int main () {
 }
 
 */
-
 // Optimal solution :-
 
 int largest (vector<int> & arr){
