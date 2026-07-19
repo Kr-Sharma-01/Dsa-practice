@@ -40,7 +40,7 @@ int main() {
 
     int ans = maxProfit(prices);
 
-    cout << "Maximum Profit = " << ans << endl;
+    cout << "Maximum Profit is :  = " << ans << endl;
 
     return 0;
 }
