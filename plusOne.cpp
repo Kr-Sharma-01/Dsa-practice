@@ -21,7 +21,7 @@ vector<int> addOne (vector<int> & arr){
 int main (){
     vector<int> arr = {1,2,3};
     vector<int> ans = addOne(arr);
-    cout << "The plus one number is : ";
+    cout << "The plus one number to orignal is : ";
     for ( int x  : ans){
         cout << x ;
     }
