@@ -9,7 +9,7 @@ using namespace std;
 
 int RomanToInt (string s){
 
-    unordered_map<char , int> value = {
+    unordered_map<char , int> mpp = {
         {'I' , 1},
         {'V' , 5},
         {'X' , 10},
@@ -22,11 +22,11 @@ int RomanToInt (string s){
     int ans = 0;
      
     for(int i = 0 ; i < s.length() ; i++){
-        if ( i < s.length()-1 && value[s[i]]<value[s[i+1]]){
-            ans -= value[s[i]];
+        if ( i < s.length()-1 && mpp[s[i]]<mpp[s[i+1]]){
+            ans -= mpp[s[i]];
         }
         else{
-            ans += value[s[i]];
+            ans += mpp[s[i]];
         }
     }
 return ans;
@@ -37,5 +37,5 @@ int main (){
     cout << "Enter roman number : " ; 
     cin >> s ;
     int answer = RomanToInt(s);
-    cout <<"The number is : " << answer ;  
+    cout <<"The integer number is : " << answer ;  
 }
