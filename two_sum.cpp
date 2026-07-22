@@ -33,12 +33,9 @@ vector<int> twoSum(vector<int>& nums, int target) {
             if (mp.find(complement) != mp.end()) {
                 return {mp[complement], i};
             }
-
             mp[nums[i]] = i;
         }
-
-        return {};
-        
+        return {};        
     }
     
 
