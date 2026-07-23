@@ -10,14 +10,14 @@ using namespace std;
 int maxSubArray(vector<int>& nums) {
 
         int sum = 0;
-        int maxi = nums[0];
+        int maximum = nums[0];
 
         for (int i = 0; i < nums.size(); i++) {
 
             sum += nums[i];
 
-            if (sum > maxi) {
-                maxi = sum;
+            if (sum > maximum) {
+                maximum = sum;
             }
 
             if (sum < 0) {
@@ -25,7 +25,7 @@ int maxSubArray(vector<int>& nums) {
             }
         }
 
-        return maxi;
+        return maximum;
     }
 
 
