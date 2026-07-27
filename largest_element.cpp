@@ -22,7 +22,7 @@ int main () {
 }
 
 */
-// Optimal solution :-
+// Optimal Soln :-
 
 int largest (vector<int> & arr){
     int max = arr[0];
