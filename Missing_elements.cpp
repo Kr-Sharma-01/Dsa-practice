@@ -9,7 +9,7 @@ using namespace std;
 
 // Optimal Soln:
 
-vector<int> findMissingElements(vector<int>& nums) {
+vector<int> MissingElements(vector<int>& nums) {
         int mn = INT_MAX;
         int mx = INT_MIN;
 
@@ -31,7 +31,7 @@ vector<int> findMissingElements(vector<int>& nums) {
 
 int main() {
   vector<int> nums = {1, 4, 2, 5};
-  vector<int> ans = findMissingElements(nums);
+  vector<int> ans = MissingElements(nums);
     cout << "Missing Elements: ";
     for (int x : ans) {
         cout << x << " ";
