@@ -29,11 +29,14 @@ int main() {
     int n;
     cout << "Enter number of days: ";
     cin >> n;
+
     vector<int> prices(n);
+
     cout << "Enter stock prices: ";
     for (int i = 0; i < n; i++) {
         cin >> prices[i];
     }
+    
     int ans = maxProfit(prices);
     cout << "Maximum Profit is :  = " << ans << endl;
     return 0;
