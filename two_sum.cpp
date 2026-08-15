@@ -40,10 +40,14 @@ vector<int> twoSum(vector<int>& nums, int target) {
     
 
 int main() {
+    
     vector<int> arr = {1,2,3,4,5};
+    
     vector<int> ans = twoSum(arr, 5);
+    
     for (int x: ans) {
         cout << x << " ";
     }
+    
     return 0;
 }
