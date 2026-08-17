@@ -29,14 +29,18 @@ int ones (vector<int> & arr){
 // Optimal Soln :
 
 int ones (vector<int> & arr){
+
     int xorr = 0 ;
+
     for (int i = 0 ; i < arr.size() ; i++){
         xorr = xorr ^ arr[i];        
     }
+
 return xorr ;
 }
 
 int main (){
+    
     vector<int> arr = {1,1,2,2,3,3,4,5,5};
     int ans = ones(arr);
     cout << "Element that appeared only once is : " << ans ;
