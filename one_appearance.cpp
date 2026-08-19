@@ -42,8 +42,11 @@ return xorr ;
 int main (){
     
     vector<int> arr = {1,1,2,2,3,3,4,5,5};
+
     int ans = ones(arr);
+
     cout << "Element that appeared only once is : " << ans ;
+    
     return 0;
 
 }
