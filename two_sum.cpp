@@ -3,6 +3,7 @@
 #include<iostream>
 #include<vector>
 #include<unordered_map>
+#include<algorithm>
 
 using namespace std;
 
@@ -22,7 +23,7 @@ vector<int> sum (vector<int> & arr , int target){
 }
 */
 
-//Optimal Soln :
+//Optimal Soln : Hashing 
 
 vector<int> twoSum(vector<int>& nums, int target) {
         unordered_map<int, int> mp;
@@ -38,6 +39,27 @@ vector<int> twoSum(vector<int>& nums, int target) {
         return {};        
     }
     
+// Optimal : 2 pointers (not for giving index)
+/*
+vector<int> sum2 (vector<int> & arr , int target){
+    int left = 0 , right = arr.size()-1 ;
+    sort(arr.begin() , arr.end());
+    while(left<right){
+        int sum = arr[left] + arr[right];
+        if (sum == target){
+            return {0};
+        }
+        else if (sum < target){
+            left++;
+        }
+        else {
+            right++;
+        }
+    }
+return{};
+}
+*/
+
 
 int main() {
     
