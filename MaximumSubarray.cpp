@@ -5,6 +5,23 @@
 
 using namespace std;
 
+// Brute soln :
+/*
+int maxSubarray (vector<int> & arr){
+    int maxi = INT_MIN ;
+    for (int i = 0 ; i < arr.size() ; i++ ){
+        for (int j =0 ; j < arr.size() ; j++){
+            int sum = 0 ;
+            for ( int k = i ; k < j ; k++){
+                sum += arr[k];
+                maxi = max(sum,maxi);
+            }
+        }
+    }
+    return 0;
+}
+*/
+
 // Optimal soln :
 
 int maxSubArray(vector<int>& nums) {
