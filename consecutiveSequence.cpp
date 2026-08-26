@@ -63,8 +63,11 @@ vector<int> ConsecutiveSequence (vector<int> & arr){
             int count = 1;
             int x = it;
             while (st.find(x+1) != st.end()){
-                
+                x = x+1;
+                count = count +1;
             }
+            longest = max(longest  , count);
         }
     }
+    return {longest};
 }
