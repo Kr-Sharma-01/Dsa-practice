@@ -28,8 +28,43 @@ int Longest (vector<int> & arr){
 }
 
 
-// Optimal Soln :
+// Better Soln :
 
-int Consecutive (vector<int> & arr){
-    
+vector<int> Consecutive (vector<int> & arr){
+    sort(arr.begin() , arr.end());
+    int largest = 1 , count = 0 , lastSmallest = INT_MIN;
+
+    for (int i = 0 ; i < arr.size() ; i++){
+        if (arr[i]-1 == lastSmallest){
+            count = count +1;
+            lastSmallest = arr[i];
+        }
+        else if (arr[i] != lastSmallest){
+            lastSmallest == arr[i];
+            count = 1;
+        }
+        largest = max (largest , count);
+    }
+    return {largest};
+}
+
+// Optimal soln:
+
+vector<int> ConsecutiveSequence (vector<int> & arr){
+    if (arr.size()==0){ return {};}
+    int longest =1;
+    unordered_set<int> st; 
+    for (int i = 0 ; i < arr.size() ; i++){
+        st.insert(arr[i]);
+    }
+
+    for (auto it : st){
+        if (st.find(it-1) == st.end()){
+            int count = 1;
+            int x = it;
+            while (st.find(x+1) != st.end()){
+                
+            }
+        }
+    }
 }
