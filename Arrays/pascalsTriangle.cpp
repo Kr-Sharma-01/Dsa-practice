@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// Optimal Soln :
+// Optimal Soln : TC : O(N^2) , SC : O(N^2)
 
 vector<vector<int>> triangle (int Numrows){
     vector<vector<int>> ans;
