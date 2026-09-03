@@ -25,8 +25,7 @@ int leader (vector<int> & arr){
      }
 }
 
-
-// Optimal :
+// Optimal Soln : Tc : O(n)
 
 int Leader (vector<int> & arr){
     int n = arr.size();
