@@ -1,8 +1,6 @@
 // Longest Subarray with sum K
 
-#include<iostream>
-#include<vector>
-#include<map>
+#include<bits/stdc++.h>
 
 using namespace std;
 

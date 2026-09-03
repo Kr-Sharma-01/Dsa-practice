@@ -1,27 +1,18 @@
 //Largest element in an array 
 
- //Brute solution :-
-
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include<bits/stdc++.h>
 
 using namespace std;
 
 vector<int> arr = {1,2,3,4,5};
 
-/*
+// Brute Soln :
+
 int largest_element ( vector <int> & arr){
     sort(arr.begin() , arr.end());
     return arr[arr.size() - 1];}
 
-int main () {
-    vector<int> arr = {1,2,3,4,5};
-    cout << "Largest number is " << largest_element(arr);
-    return 0;
-}
 
-*/
 // Optimal Soln :-
 
 int largest (vector<int> & arr){
@@ -36,9 +27,3 @@ int largest (vector<int> & arr){
     return max;
 }
 
-int main (){
-    vector<int> arr = {1,2,3,4,5};
-    cout << "Largest number is " <<largest(arr);
-    return 0;
-
-}
