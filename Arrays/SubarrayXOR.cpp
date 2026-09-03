@@ -21,5 +21,5 @@ int count (vector<int> & arr , int k){
 // Optimal Soln : TC : O() , SC : O()
 
 int XorCount (vector<int> & arr){
-    
+        
 }

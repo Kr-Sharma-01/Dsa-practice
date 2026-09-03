@@ -5,9 +5,7 @@
 using namespace std;
 
 int LongestSubarrayWithSumK ( vector<int> arr , long long k){
-
     map<long long , int > presumMap;
-
     long long sum = 0;
     int maxLen = 0;
 

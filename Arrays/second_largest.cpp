@@ -7,7 +7,7 @@ using namespace std;
 vector<int> arr = {11,4,5,1,8};
 int n = arr.size();
 
-// brute force soln:
+// Brute soln:
 /*
 int s_largest (vector<int> & arr){
 

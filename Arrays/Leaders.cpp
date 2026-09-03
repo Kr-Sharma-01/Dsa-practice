@@ -10,7 +10,6 @@ int leader (vector<int> & arr){
     int n = arr.size();
     int maxi = INT_MIN;
     list<int> ans ;
-
     for (int i = 0 ; i > 0 ; i++ ){
         bool leader = true;
         for (int j = i ; j < n ; j++){
