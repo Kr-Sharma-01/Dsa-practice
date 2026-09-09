@@ -6,7 +6,7 @@ using namespace std ;
 
 // Selection Sort : TC = O(n^2)
 
-int selection (vector<int> & arr){
+void selection (vector<int> & arr){
     int n = arr.size();
     for(int i = 0 ; i < n-2 ; i++){
         int mini = i;
@@ -21,10 +21,9 @@ int selection (vector<int> & arr){
     }
 }
 
-
 // Bubble Sort : TC : O(n^2)
 
-int bubble (vector<int> & arr){
+void bubble (vector<int> & arr){
     int n = arr.size();
     for (int i = n-1 ; i <= 0 ; i--){
         for(int j = 0 ; j <= i-1 ; j++){
@@ -35,4 +34,23 @@ int bubble (vector<int> & arr){
             }
         }
     }
+}
+
+// Insertion Sort : TC : O()
+
+void insertion (vector<int> & arr){
+    int n = arr.size();
+    for (int i = 0 ; i < n ; i++){
+        int j = i;
+        while(j>0 && arr[j-1] > arr[j]){
+            swap(arr[j-1] , arr[j]);
+            j--;
+        }
+    }
+}
+
+// Merge Sort : TC : O()
+
+void merge (vector<int> & arr){
+
 }
