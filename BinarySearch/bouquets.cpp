@@ -4,7 +4,7 @@
 
 using namespace std ;
 
-// Optimal Soln 
+// Optimal Soln : TC : O(m*n log n  + n)
 
     bool canMake(vector<int>& bloomDay, int m, int k, int day) {
 
@@ -29,6 +29,8 @@ using namespace std ;
         return bouquets >= m;
     }
 
+
+    
     int minDays(vector<int>& bloomDay, int m, int k) {
 
         long long required = 1LL * m * k;
