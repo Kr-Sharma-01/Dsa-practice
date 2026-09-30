@@ -3,6 +3,9 @@
 #include<bits/stdc++.h>
 
 using namespace std ;
+
+// Optimal Soln  
+
     int SumD(vector<int> & arr , int d){
         int sum = 0 ;
         int n = arr.size();
