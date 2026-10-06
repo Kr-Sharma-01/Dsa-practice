@@ -4,6 +4,8 @@
 
 using namespace std ;
 
+// Optimal Soln : O(lon n)
+
 class Solution {
 public:
     int shipWithinDays(vector<int>& weights, int days) {
